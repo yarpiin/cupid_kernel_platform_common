@@ -65,7 +65,7 @@ scm_version()
 	if head=$(git rev-parse --verify HEAD 2>/dev/null); then
 
 		if [ -n "$android_release" ] && [ -n "$kmi_generation" ]; then
-			printf '%s' "-$android_release-$kmi_generation"
+			printf '%s' "-$kmi_generation"
 		elif [ -n "$android_release" ]; then
 			printf '%s' "-$android_release"
 		fi
